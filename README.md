@@ -22,6 +22,9 @@ $ python3 PocongRunner.py
 | Space | Lompat (jump) untuk menghindari obstacle |
 | Enter | Memulai game |
 
+## Releases
+Game ini dibuat pada tanggal 5 Januari 2020 dan dirilis pada tanggal 7 Januari.
+
 ## Contributing
 Silahkan pull request jika kamu ingin membantu proses pengembangan ini.
 
