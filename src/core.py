@@ -95,6 +95,12 @@ class Health(object):
         else:
             self.value += 5
 
+    def check(self):
+        if self.value <= 0:
+            return True
+        else:
+            return False
+
     def draw(self, screen):
         screen.blit(self.health_bar, (self.width-230, 5))
         for i in range(self.value):
@@ -116,6 +122,12 @@ class Score(object):
 
     def rescore(self):
         self.score -= 1
+
+    def check(self):
+        if self.score < 0:
+            return True
+        else:
+            return False
 
     def draw(self, screen):
         text_surface, rect = self.font.render("Score: " + str(self.score), (133, 230, 159))
