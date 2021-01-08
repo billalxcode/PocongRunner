@@ -22,6 +22,11 @@ $ python3 PocongRunner.py
 | Space | Lompat (jump) untuk menghindari obstacle |
 | Enter | Memulai game |
 
+## What is new?
+- Memperbaiki kesalahan dari score
+- Memperbaiki kesalahan dari nyawa/darah/health
+- Menambahkan end game screen
+
 ## Releases
 Game ini dibuat pada tanggal 5 Januari 2020 dan dirilis pada tanggal 7 Januari.
 
