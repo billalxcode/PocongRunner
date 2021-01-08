@@ -11,8 +11,9 @@ from pygame.surface import Surface as PyGameSurface
 from pygame.sprite import Group as PyGameSpriteGroup
 from pygame.sprite import collide_mask
 
-from src.utils import BACKGROUND_GAME, BACKGROUND_START, STONE_IMAGE, PLAYER_IMAGE, KERIS_IMAGE, SCORE_FONT, BAMBU_IMAGE, HEALTH_IMAGE, HEALTHBAR_IMAGE
+from src.utils import BACKGROUND_GAME, BACKGROUND_START, STONE_IMAGE, PLAYER_IMAGE, KERIS_IMAGE, SCORE_FONT, BAMBU_IMAGE, HEALTH_IMAGE, HEALTHBAR_IMAGE, BACKGROUND_END
 from src.startGame import StartGame
+from src.endGame import EndGame
 from src.core import Player, Keris, Score, Bambu, Health
 
 import random
@@ -41,6 +42,8 @@ class Main(object):
         self.BACKGROUND_IMAGE = scale(self.BACKGROUND_IMAGE, (self.rect.width, self.BACKGROUND_IMAGE.get_height()))
         self.BACKGROUND_START = self.load_image(path=BACKGROUND_START, convert=False, convert_alpha=True)
         self.BACKGROUND_START = scale(self.BACKGROUND_START, (int(self.BACKGROUND_START.get_width()/2), self.rect.height))
+        self.BACKGROUND_END = self.load_image(path=BACKGROUND_END, convert=False, convert_alpha=True)
+        self.BACKGROUND_END = scale(self.BACKGROUND_END, (int(self.BACKGROUND_END.get_width()/2), self.rect.height))
         self.STONE_IMAGE = self.load_image(path=STONE_IMAGE, convert=True, convert_alpha=True)
         self.PLAYER_IMAGE = self.load_image(path=PLAYER_IMAGE, convert=False, convert_alpha=True)
         self.PLAYER_IMAGE = flip(self.PLAYER_IMAGE, True, False)
@@ -101,6 +104,12 @@ class Main(object):
         while not self.gameover:
             self.control()
 
+            #== Check is game over ==#
+            if self.score.check():
+                self.gameover = True
+            elif self.health.check():
+                self.gameover = True
+
             self.base_position[0] = -((-self.base_position[0] + 4) % self.base_diff)
             
             boundary_values = [0, self.base_position[-1]]
@@ -118,6 +127,7 @@ class Main(object):
                     is_add = True
                 
                 if keris.rect.left < 5 and keris.rect.left > 0 and is_add:
+                    self.health.revalue()
                     keris_position = [self.rect.width+random.randint(10, 200), self.rect.height*0.80]
                     new_keris = Keris(self.KERIS_IMAGE, keris_position)
                     new_keris.rect.bottom += random.randint(100, self.rect.height-120)
@@ -139,6 +149,7 @@ class Main(object):
                     is_add = False
 
                 elif keris.rect.right < 0:
+                    self.health.revalue()
                     self.kerisGroup.remove(keris)
                     is_add = True
 
@@ -174,4 +185,7 @@ class Main(object):
             update()
 
             self.clock.tick(60)
+        
+        end = EndGame(self.screen, self.rect, self.BACKGROUND_END)
+        end.run()
         PyGameQuit()
