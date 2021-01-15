@@ -1,6 +1,6 @@
 # Pocong Runner
 
-  Terinspirasi oleh salah satu game yakni [Treasure Hunter Buah Maja](http://ejournal.unikama.ac.id/index.php/jst/article/view/3683). Permainan saya juga menggunakan konsep yang sama namun menghadirkan atmosfer effect sound dan karakter yang berbeda. Yap! seperti namanya [Pocong Hunter](https://github.com/billalxcode/PocongRunner) dengan karakter utama yakni Pocong.
+  Terinspirasi oleh salah satu game yakni [Treasure Hunter Buah Maja](http://ejournal.unikama.ac.id/index.php/jst/article/view/3683). Permainan saya juga menggunakan konsep yang sama namun menghadirkan atmosfer effect sound dan karakter yang berbeda. Yap! seperti namanya [Pocong Hunter](https://github.com/billalxcode/PocongRunner) dengan karakter utama yakni Pocong. Game ini adalah game tanpa akhir.
 
 ## Installation
 
@@ -28,6 +28,7 @@ $ python3 PocongRunner.py
 - Menambahkan texture rumput
 - Menambahkan beberapa sound effect
 - Menambahkan fitur lainnya
+- Tampilan awal lebih menarik
 
 ## Releases
 - Game ini dibuat pada tanggal 5 Januari 2020 dan dirilis pada tanggal 7 Januari 2020.
