@@ -1,4 +1,4 @@
-from src.main import Main
+from src.activity import Acticity
 
-pocongrunner = Main()
-pocongrunner.run()
+main = Acticity()
+main.run()
