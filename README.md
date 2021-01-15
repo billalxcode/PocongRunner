@@ -23,19 +23,23 @@ $ python3 PocongRunner.py
 | Enter | Memulai game |
 
 ## What is new?
-- Memperbaiki kesalahan dari score
-- Memperbaiki kesalahan dari nyawa/darah/health
-- Menambahkan end game screen
+- Menambahkan beberapa background 
+- Menambahkan save score
+- Menambahkan texture rumput
+- Menambahkan beberapa sound effect
+- Menambahkan fitur lainnya
 
 ## Releases
-Game ini dibuat pada tanggal 5 Januari 2020 dan dirilis pada tanggal 7 Januari.
+Game ini dibuat pada tanggal 5 Januari 2020 dan dirilis pada tanggal 7 Januari 2020.
+Game ini diupdate pada tanggal 10 Januari 2020 dan dirilis versi 0.2 pada tanggal 15 Januari 2020.
 
 ## Contributing
 Silahkan pull request jika kamu ingin membantu proses pengembangan ini.
 
 ## Credits
-- Devi Sukrisna (pengembang game Treasure Hunter Buah Maja)
-- Ardhenis Muhammad Aflah (dokumentasi)
-- [Open Game Art](opengameart.org) (image assets)
+- Devi Sukrisna (Pengembang game Treasure Hunter Buah Maja)
+- Ardhenis Muhammad Aflah (Dokumentasi)
+- Eka (Design UI)
+- [Open Game Art](opengameart.org) (Image assets)
 
 Terima kasih telah membantu saya
