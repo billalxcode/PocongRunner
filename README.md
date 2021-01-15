@@ -30,8 +30,8 @@ $ python3 PocongRunner.py
 - Menambahkan fitur lainnya
 
 ## Releases
-Game ini dibuat pada tanggal 5 Januari 2020 dan dirilis pada tanggal 7 Januari 2020.
-Game ini diupdate pada tanggal 10 Januari 2020 dan dirilis versi 0.2 pada tanggal 15 Januari 2020.
+- Game ini dibuat pada tanggal 5 Januari 2020 dan dirilis pada tanggal 7 Januari 2020.
+- Game ini diupdate pada tanggal 10 Januari 2020 dan dirilis versi 0.2 pada tanggal 15 Januari 2020.
 
 ## Contributing
 Silahkan pull request jika kamu ingin membantu proses pengembangan ini.
