@@ -1,0 +1,12 @@
+{
+    "informations": {
+        "name": "Pocong Runner",
+        "version": 0.2,
+        "repo": "https://github.com/billalxcode/PocongRunner"
+    },
+    "settings": {
+        "volume": 200,
+        "speed": 4,
+        "frame": 60
+    }
+} 
